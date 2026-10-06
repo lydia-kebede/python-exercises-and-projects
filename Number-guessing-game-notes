@@ -1,0 +1,127 @@
+# learning python by creating projects 
+# Random module 
+#Python have a function called randint.
+#randint is a function that gives a random number between this minimum and maximum.
+print("randint(1,100)")
+# How to use the module 
+import random 
+num = random.randint(1,50)
+print(num)
+num_one = random.randint(1,50)
+print(num_one)
+num_two = random.randint(1,50)
+print(num_two)
+# If I want to get multiple random numbers I need to create multiple variable that is how I can get multiple random number.
+# What are arguments 
+# randint(1,50) = 1 and 50 are arguments.
+# Both 1 and 50 is icluded in randint.
+#Getting input from the user.
+# This is done mainly by input funsction.
+name = input("What is ur name?")
+print(name)
+number = int(input("Enter your age "))
+print(number)
+# Conditional sentence 
+#if I want python to decide something I am going to use conditional sentence.
+# It allows our program to make a decision.
+# if consition:
+#   # do something
+# In conditional statement we use comparision operators.
+#  else if we have two possibilities we use else.
+# if consition:
+# do something
+# else:
+# do_that
+# elif is if we have a condition which is more than two.
+# How python goes to through conditions it is using top-bottom approach.
+#Conditions can be combined using and or not.
+# Nested condition if inside if.
+# We can skip this and we can use operators instead.
+# Exercise three
+# x = 10 is assignement 
+# x ==10 is comparision 
+# Exercise four
+# The answer is C and the conditions that are checked are if one elif two and elif 3 these are theconditions that are checked 
+
+age_limit = 20
+id ="taken"
+if age_limit >= 18 and id == "taken":
+    print("Allowed")
+# Exercise five 
+day = "saturday"
+if day == "saturday" or day == "sunday":
+    print("Weekend")
+else:
+    print("Weekday")
+# exercise six 
+num = int(input("Enter integer number"))
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
+# Exercise seven
+
+score = int(input("Enter your score "))
+
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >=70:
+    print("C")
+elif score >= 60:
+    print("D")
+else:
+    print("F")
+#Loops 
+# It let's us to repeat a block of code multiple times.
+for i  in range(5):
+    print(i)
+#Addition inside loop
+for i in range(1,6):
+    print(i + 10)
+# If inside a loop
+for i in range(1,7):
+    if i % 4 == 0:
+        print(i)
+# While loop
+# keep repeating while a condition is true.
+# use for loop when you know how many times you want to repeat a block of code.
+# use while loop when you don't know how many times you want to repeat a block of code.
+# break
+for i in range (1,10):
+    if i == 5:
+        break
+    print(i)
+# continue
+for i in range(1,10):
+    if i == 5:
+        continue
+    print(i)
+# Loop through string 
+name_one = "Lydia"
+for letter in name_one:
+    print(letter)
+# loop through list
+fruits = ["apple", "banana", "cherry"]
+for fruit in fruits:
+    print(fruit)    
+# Nested list
+for i in range(1,4):
+    for j in range (1,4):
+        print(i,j)
+# Practice time 
+for i in range (1,11):
+    print(i)
+
+for i in  range(2,21,2):
+    if i % 2 == 0:
+        print(i)
+for i in range(10,0,-1):
+    print(i)
+
+n = int(input('Enter a number'))
+for i in range(1,11):
+    print(n * i)
