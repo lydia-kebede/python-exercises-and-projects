@@ -1,0 +1,48 @@
+# Binary search 
+# Seven python concepts I need to know to start building things in bnary search.
+# 1. Variable and assignment 
+left = 0 
+right = 10
+target = 15
+
+# 2. List and indexing 
+num = [1,2,34,5,6,7,8,9,10,11,12,14,15]
+print(num[10])
+# 3. Comparision Operators
+x == 10
+y < 9
+z > 4
+# 4.Conditional statements 
+if x == target:
+    print("Found")
+elif x < target:
+    print("Not Found")
+else:
+    print ("Search left")
+# While loop
+while left <= right:
+    mid = (left + right) // 2
+    if num[mid] == target:
+        print("Found")
+        break
+    elif num[mid] < target:
+        left = mid + 1
+    else:
+        right = mid - 1
+# Functions 
+def find_num(target):
+    return target 
+
+# Exercise 
+def find_number(numbers, target):
+    left = 0
+    right = len(numbers) -1 
+    while left <= right:
+        mid = (left + right) // 2
+        if numbers[mid] == target:
+            return mid
+        elif numbers[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1
