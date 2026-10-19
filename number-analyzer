@@ -1,0 +1,52 @@
+
+numbers = []
+
+amount = int(input("How many numbers will you enter? "))
+
+for i in range(amount):
+    number = int(input(f"Enter number {i + 1}: "))
+    numbers.append(number)
+
+total = 0
+even_count = 0
+odd_count = 0
+positive_count = 0
+negative_count = 0
+zero_count = 0
+
+smallest = numbers[0]
+largest = numbers[0]
+
+for number in numbers:
+    total = total + number
+
+    if number % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+    if number > 0:
+        positive_count += 1
+    elif number < 0:
+        negative_count += 1
+    else:
+        zero_count += 1
+
+    if number < smallest:
+        smallest = number
+
+    if number > largest:
+        largest = number
+
+average = total / len(numbers)
+
+print("\n--- Number Analysis Report ---")
+print("Total:", total)
+print("Average:", average)
+print("Smallest:", smallest)
+print("Largest:", largest)
+print("Even numbers:", even_count)
+print("Odd numbers:", odd_count)
+print("Positive numbers:", positive_count)
+print("Negative numbers:", negative_count)
+print("Zeros:", zero_count)
